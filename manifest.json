@@ -1,0 +1,34 @@
+{
+    "name": "Linkedin Finder",
+    "version": "2.0",
+    "manifest_version": 3,
+    "description": "Updated Linkedin Finder on 24/08/2022",
+    "action":{
+       
+        "default_icon":"logo.png",
+        "default_popup":"popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            
+            "https:\/\/www.linkedin.com\/*"
+          ],
+          "js": [
+            "content.js"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+
+
+    "icons":{
+        "128": "logo.png"
+        
+
+    },
+    "permissions":["activeTab"]
+    
+
+
+}
